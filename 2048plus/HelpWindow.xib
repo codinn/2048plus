@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="5053"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HelpWindowController">
+            <connections>
+                <outlet property="webView" destination="pyK-nA-PFa" id="F4P-a7-Syq"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="How to Play" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="462" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="pyK-nA-PFa">
+                        <rect key="frame" x="0.0" y="0.0" width="462" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO"/>
+                        <connections>
+                            <outlet property="policyDelegate" destination="-2" id="g9Z-KB-WCM"/>
+                        </connections>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pyK-nA-PFa" secondAttribute="trailing" id="TrA-ap-WEg"/>
+                    <constraint firstAttribute="bottom" secondItem="pyK-nA-PFa" secondAttribute="bottom" id="l5g-q3-ox6"/>
+                    <constraint firstItem="pyK-nA-PFa" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="oSC-iW-MF9"/>
+                    <constraint firstItem="pyK-nA-PFa" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="zB9-Zf-rP6"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="nFZ-xs-AXo"/>
+            </connections>
+        </window>
+    </objects>
+</document>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AboutWindowController">
+            <connections>
+                <outlet property="copyrightTextField" destination="xTR-ik-pEs" id="OSS-m2-DYE"/>
+                <outlet property="creditsTextField" destination="XFl-tJ-EAX" id="imn-AW-1UW"/>
+                <outlet property="feedbackButton" destination="94B-Nq-AvX" id="xBR-bP-tC7"/>
+                <outlet property="licenseTextField" destination="9iz-qK-0ut" id="tqJ-du-3t3"/>
+                <outlet property="opensourceTextField" destination="X8X-Gm-uK2" id="eAS-nA-spE"/>
+                <outlet property="rateUsButton" destination="Dwd-UW-wHF" id="mbQ-Ui-chR"/>
+                <outlet property="releaseDateTextField" destination="ciG-Li-XeX" id="PqD-gc-b83"/>
+                <outlet property="titleTextField" destination="Jla-Nc-9Ff" id="YEz-Q5-xmQ"/>
+                <outlet property="versionTextField" destination="7y3-Re-mYs" id="vMi-Ew-Z6m"/>
+                <outlet property="window" destination="jOh-3Q-Wpw" id="bf4-fl-eoW"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="About 2048+" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="jOh-3Q-Wpw" userLabel="About 2048+ Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES"/>
+            <rect key="contentRect" x="554" y="411" width="379" height="375"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="shT-I0-eJc">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="375"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="none" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-Rt-gMC">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="375"/>
+                        <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="379" height="375"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="Heq-UK-E21">
+                                    <rect key="frame" x="157" y="295" width="64" height="64"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="8QV-NZ-MZs"/>
+                                        <constraint firstAttribute="width" constant="64" id="tgA-1X-nZ0"/>
+                                    </constraints>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="URT-1Q-jgM"/>
+                                </imageView>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jla-Nc-9Ff">
+                                    <rect key="frame" x="17" y="262" width="345" height="19"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="2048+" id="Iwh-sH-Kke">
+                                        <font key="font" size="16" name="LucidaGrande-Bold"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7y3-Re-mYs">
+                                    <rect key="frame" x="13" y="154" width="353" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version: 14.04" id="eMc-zz-Wna">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ciG-Li-XeX">
+                                    <rect key="frame" x="13" y="132" width="353" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Release Date: 2014-04-10" id="QFb-p1-cc1">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-ik-pEs">
+                                    <rect key="frame" x="13" y="110" width="353" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Copyright: © 2014 Codinn, all rights reserved." id="FtH-3g-Cka">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFl-tJ-EAX">
+                                    <rect key="frame" x="13" y="16" width="353" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" id="acv-zj-GCi">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <string key="title">Credits: 2048+ is based on 2048, created by Gabriele Cirulli, which was based on 1024 by Veewo Studio and conceptually similar to Threes by Asher Vollmer.</string>
+                                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="94B-Nq-AvX">
+                                    <rect key="frame" x="122" y="206" width="134" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="122" id="Ytn-AM-PIy"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="push" title="Send Feedback" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2jB-rU-DA5">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="openSendFeedback:" target="-1" id="Q0O-Fd-aQY"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-UW-wHF">
+                                    <rect key="frame" x="122" y="173" width="134" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="push" title="Rate 2048+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Oas-Bo-HDw">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="openMacAppStore:" target="-1" id="PY3-0R-71H"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8X-Gm-uK2">
+                                    <rect key="frame" x="14" y="88" width="351" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" title="Open Source: http://github.com/codinn/2048plus" id="7S1-IZ-p2f">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iz-qK-0ut">
+                                    <rect key="frame" x="14" y="66" width="353" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" title="License: 2048+ is licensed under the MIT license." id="Z31-qR-ocT">
+                                        <font key="font" metaFont="smallSystem"/>
+                                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <constraints>
+                            <constraint firstItem="X8X-Gm-uK2" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="16" id="0x4-Ss-exp"/>
+                            <constraint firstAttribute="trailing" secondItem="Jla-Nc-9Ff" secondAttribute="trailing" constant="19" id="5fq-ua-APN"/>
+                            <constraint firstItem="xTR-ik-pEs" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="15" id="6Bt-C6-AVR"/>
+                            <constraint firstAttribute="trailing" secondItem="ciG-Li-XeX" secondAttribute="trailing" constant="15" id="6QQ-r3-G2i"/>
+                            <constraint firstItem="Jla-Nc-9Ff" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="19" id="Dbi-q1-Smi"/>
+                            <constraint firstAttribute="centerX" secondItem="Dwd-UW-wHF" secondAttribute="centerX" constant="0.5" id="DcV-Zf-tEn"/>
+                            <constraint firstItem="xTR-ik-pEs" firstAttribute="top" secondItem="ciG-Li-XeX" secondAttribute="bottom" constant="8" id="EUj-dU-0mV"/>
+                            <constraint firstItem="Dwd-UW-wHF" firstAttribute="width" secondItem="94B-Nq-AvX" secondAttribute="width" id="Eyj-0V-XC3"/>
+                            <constraint firstItem="9iz-qK-0ut" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="16" id="HEM-Xi-MPw"/>
+                            <constraint firstAttribute="trailing" secondItem="9iz-qK-0ut" secondAttribute="trailing" constant="14" id="Hj7-WK-Rgn"/>
+                            <constraint firstAttribute="trailing" secondItem="xTR-ik-pEs" secondAttribute="trailing" constant="15" id="I2z-U2-AWH"/>
+                            <constraint firstItem="ciG-Li-XeX" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="15" id="LDc-td-Gac"/>
+                            <constraint firstAttribute="centerX" secondItem="94B-Nq-AvX" secondAttribute="centerX" constant="0.5" id="Mdc-b5-8Hy"/>
+                            <constraint firstItem="Dwd-UW-wHF" firstAttribute="top" secondItem="94B-Nq-AvX" secondAttribute="bottom" constant="12" id="O8Q-7d-bf2"/>
+                            <constraint firstItem="94B-Nq-AvX" firstAttribute="top" secondItem="Jla-Nc-9Ff" secondAttribute="bottom" constant="28" id="Pq0-lG-EuA"/>
+                            <constraint firstAttribute="trailing" secondItem="XFl-tJ-EAX" secondAttribute="trailing" constant="15" id="Sxc-bg-Aas"/>
+                            <constraint firstItem="7y3-Re-mYs" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="15" id="Wt0-n5-sag"/>
+                            <constraint firstAttribute="bottom" secondItem="XFl-tJ-EAX" secondAttribute="bottom" constant="16" id="XfM-aY-o9Z"/>
+                            <constraint firstAttribute="trailing" secondItem="7y3-Re-mYs" secondAttribute="trailing" constant="15" id="YIj-fg-1ZH"/>
+                            <constraint firstItem="9iz-qK-0ut" firstAttribute="top" secondItem="X8X-Gm-uK2" secondAttribute="bottom" constant="8" id="Z2G-Is-5ce"/>
+                            <constraint firstItem="Heq-UK-E21" firstAttribute="top" secondItem="vhb-Rt-gMC" secondAttribute="top" constant="16" id="eTG-FK-h6p"/>
+                            <constraint firstAttribute="centerX" secondItem="Heq-UK-E21" secondAttribute="centerX" constant="0.5" id="flc-a0-OX1"/>
+                            <constraint firstItem="XFl-tJ-EAX" firstAttribute="top" secondItem="9iz-qK-0ut" secondAttribute="bottom" constant="8" id="j67-pv-h9k"/>
+                            <constraint firstItem="ciG-Li-XeX" firstAttribute="top" secondItem="7y3-Re-mYs" secondAttribute="bottom" constant="8" id="jOx-WL-ugE"/>
+                            <constraint firstItem="Jla-Nc-9Ff" firstAttribute="top" secondItem="Heq-UK-E21" secondAttribute="bottom" constant="14" id="lkY-47-kxd"/>
+                            <constraint firstItem="XFl-tJ-EAX" firstAttribute="leading" secondItem="vhb-Rt-gMC" secondAttribute="leading" constant="15" id="pfU-ox-APX"/>
+                            <constraint firstAttribute="trailing" secondItem="X8X-Gm-uK2" secondAttribute="trailing" constant="16" id="r8L-Q0-0bw"/>
+                            <constraint firstItem="7y3-Re-mYs" firstAttribute="top" secondItem="Dwd-UW-wHF" secondAttribute="bottom" constant="12" id="tfQ-fR-FJl"/>
+                            <constraint firstItem="X8X-Gm-uK2" firstAttribute="top" secondItem="xTR-ik-pEs" secondAttribute="bottom" constant="8" id="xPb-eq-qxP"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="0.98039215686274506" green="0.97254901960784312" blue="0.93725490196078431" alpha="1" colorSpace="deviceRGB"/>
+                        <font key="titleFont" size="11" name="LucidaGrande"/>
+                    </box>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vhb-Rt-gMC" firstAttribute="leading" secondItem="shT-I0-eJc" secondAttribute="leading" id="GX4-6Y-O8h"/>
+                    <constraint firstAttribute="trailing" secondItem="vhb-Rt-gMC" secondAttribute="trailing" id="VsX-Qt-hxB"/>
+                    <constraint firstItem="vhb-Rt-gMC" firstAttribute="top" secondItem="shT-I0-eJc" secondAttribute="top" id="YD9-kn-Ato"/>
+                    <constraint firstAttribute="bottom" secondItem="vhb-Rt-gMC" secondAttribute="bottom" id="qB4-OT-U8l"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="3Kp-ob-vyM"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="128" height="128"/>
+    </resources>
+</document>

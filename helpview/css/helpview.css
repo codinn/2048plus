@@ -1,0 +1,63 @@
+/*CSS*/
+
+html, body {
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+body {
+	background-color: #faf8ef;
+}
+
+div.container {
+    margin: 0;
+    padding: 0;
+}
+
+div.helpview {
+    width: 462px;
+    margin: auto;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+	width: 324px; /* use this, or not */
+	margin: 0 69px;
+}
+
+
+.carousel-caption {
+	color: #0f7ebb;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.5); /* 50% white from bottom */
+}
+
+.item1 .carousel-caption, .item2 .carousel-caption {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.item4 .carousel-caption, .item5 .carousel-caption, .item6 .carousel-caption {
+	padding-bottom: 40px;
+	margin-bottom: 50px;
+}
+
+.carousel-caption p {
+	font-weight: bold;
+}
+
+.carousel-indicators {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	bottom: 10px;
+}
+
+.carousel-indicators li.active {
+	background-color: #8f7a66;
+}
+.carousel-indicators li {
+	border-color: #8f7a66;
+}
