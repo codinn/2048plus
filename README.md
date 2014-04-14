@@ -18,3 +18,5 @@ How to play:
 * Playing a game offline 
 
 Join the numbers and get to the 2048 tile!
+
+Sponsor our development through [Buy on the Mac App Store](https://itunes.apple.com/us/app/2048+/id855231036?mt=12)
