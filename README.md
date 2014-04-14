@@ -1,5 +1,5 @@
-2048+
-========
+![logo](http://codinn.com/static/img/game2048_128x128.png) 2048+
+======================================================================
 
 ![Screenshoot](http://cdn.altrn.tv/s/80cb7c99-fac1-e311-b64e-002590a05f5f_3_full.jpg)
 
